@@ -32,7 +32,7 @@
   padding: 10px 0;
 }
 .nav-logo h1{
-  font-size: 35px;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #fff;
   cursor: pointer;
@@ -53,7 +53,11 @@
   color: #d0d0d0;
   text-decoration: none;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
+  transition: 0.8sec;
+}
+.nav-menu ul li a:hover{
+  color: #b1348b;
 }
 
 .banner-img{
@@ -69,8 +73,8 @@
 #about-part{
   max-width: 100%;
   background-color: #1A0B2E;
-}
 
+}
 .about-container{
   max-width: 80%;
   margin: 0 auto;
@@ -87,7 +91,7 @@
 .about-header p{
   font-size: 0.9rem;
   line-height: 32px;
-  color: #ffffff;
+  color: #dedddd;
 }
 
 .about-header .two{
@@ -116,4 +120,261 @@
   font-weight: 300;
   color: #ffffff;
   text-transform: uppercase;
+
+}
+
+/* Feature section CSS */
+#feature{
+  background-color: #230E3D;
+}
+.feature-container{
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+.feature-header h1{
+  color: #ffffff;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+.feature-items{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,180px);
+  gap: 10px;
+}
+.feature-items .item{
+  background-color: #351165;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+}
+.item img{
+  max-width: 35px;
+}
+
+.item h3{
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 10px 0;
+}
+.item p{
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 25px;
+  color: #c3c2c2;
+}
+
+/* Grid layout */
+.layout-one{
+  grid-row: span 2;
+  grid-column: span 1;
+}
+
+.layout-two{
+  grid-row: span 1;
+  grid-column: span 2;
+}
+
+.layout-three{
+  grid-row: span 1;
+  grid-column: span 1;
+}
+
+
+/* Episode part CSS */
+#episode{
+  background-color: #1A0B2E;
+  padding: 70px 0;
+}
+.episode-container{
+  max-width: 80%;
+  margin: 0 auto;
+}
+.epi-header h1{
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #fff;
+}
+.epi-items{
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.epi-items .episod{
+  width: 350px;
+  height: 400px;
+}
+
+.episod-video{
+  height: 200px;
+  position: relative;
+  width: 100%;
+  height: 45%;
+
+}
+
+.episod-video iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} 
+
+.episod-text{
+  padding: 24px;
+  background-color: #250D44;
+}
+.episod-text h2{
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+
+}
+.episod-text p{
+  font-size: 0.9rem;
+  line-height: 25px;
+  color: #d4d4d4;
+  padding: 8px 0;
+}
+.episod-text h4{
+  color: #00FF88;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: 8px;
+}
+
+
+/* Host section CSS */
+#host-sec{
+  background-color: #1A0B2E;
+  padding-bottom: 60px;
+}
+
+.host-conntainer{
+  max-width: 80%;
+  margin: 0 auto;
+}
+.header h1{
+  text-align: center;
+  color: #fff;
+  font-size: 2.3rem;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+.host-card{
+  background-color: #351165;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 15px;
+  border-radius: 10px;
+}
+.host-text{
+  padding-left: 18px;
+}
+.host-text h1{
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.host-text p{
+  font-size: 0.9rem;
+  color: #c8c8c8;
+  line-height: 25px;
+  padding: 10px 0;
+}
+.host-icon-item{
+  display: flex;
+  gap: 15px;
+}
+.host-icon{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgb(127, 126, 126);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Footer section CSS */
+.footer-img{
+  background-image: url(images/footer-bg.png); 
+  background-size: cover;     
+  background-repeat: no-repeat; 
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content h1{
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+.footer-icon{
+  display: flex;
+  gap: 25px;
+}
+.footer-icon p{
+  padding: 22px 0;
+  color: #c5c5c5;
+  font-size: 1rem;
+}
+.copyright{
+  color: #c5c5c5;
+  padding-top: 5px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+
+/*  Media query for responsive design   */
+
+@media (max-width: 576px) {
+/* About Part */
+
+  .about-footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .about-header p{
+    line-height: 20px;
+  }
+
+
+
+/* Feature part */
+  .feature-items{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+    gap: 10px;
+  }
+  .feature-header h1{
+    font-size: 1.7rem;
+  }
+
+  .layout-one,
+  .layout-two,
+  .layout-three{
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+
+
+
 }
