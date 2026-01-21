@@ -13,9 +13,10 @@
   border: none;
   font-size: 16px;
   font-weight: 500;
-  /* background-color: ; */
+  background: linear-gradient(120deg,#F9797A 26%,#FB09B4 51%, #9100F8 84%);
+  color: white;
+  cursor: pointer;
 }
-
 /* Header section CSS */
 #nav-bar{
   max-width: 100%;
@@ -23,7 +24,7 @@
 }
 
 .nav-container{
-  max-width: 1250px;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
@@ -36,9 +37,11 @@
   color: #fff;
   cursor: pointer;
 }
-/* .nav-logo span{
-  color: ;
-} */
+.nav-logo span{
+  background: linear-gradient(120deg,#F9797A 26%,#FB09B4 51%, #9100F8 84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .nav-menu ul{
   display: flex;
   gap: 30px;
@@ -51,5 +54,66 @@
   text-decoration: none;
   font-size: 16px;
   font-weight: 400;
+}
 
+.banner-img{
+    background-image: url(images/hero-bg.png); 
+    background-size: cover;     
+    background-repeat: no-repeat; 
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* About Section CSS */
+#about-part{
+  max-width: 100%;
+  background-color: #1A0B2E;
+}
+
+.about-container{
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+  color: #fff;
+}
+.about-header h2{
+  font-size: 2.4rem;
+  font-weight: 700;
+  padding-bottom: 10px;
+  color: #ffffff;
+}
+.about-header p{
+  font-size: 0.9rem;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.about-header .two{
+  padding-bottom: 25px;
+}
+.about-header{
+  padding-bottom: 50px;
+}
+
+.about-footer{
+  border-top: 0.1px solid rgb(86, 86, 86);
+  display: flex;
+  justify-content: space-between;
+}
+.about-item{
+  padding: 60px 0px;
+}
+.about-item h1{
+  font-size: 2.6rem;
+  color: #00FF88;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+.about-item p{
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #ffffff;
+  text-transform: uppercase;
 }
