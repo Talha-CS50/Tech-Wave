@@ -17,6 +17,7 @@
   color: white;
   cursor: pointer;
 }
+
 /* Header section CSS */
 #nav-bar{
   max-width: 100%;
@@ -31,6 +32,7 @@
   align-items: center;
   padding: 10px 0;
 }
+
 .nav-logo h1{
   font-size: 2.5rem;
   font-weight: bold;
@@ -42,6 +44,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+
 .nav-menu ul{
   display: flex;
   gap: 30px;
@@ -59,17 +63,111 @@
 .nav-menu ul li a:hover{
   color: #b1348b;
 }
-
-.banner-img{
-    background-image: url(images/hero-bg.png); 
-    background-size: cover;     
-    background-repeat: no-repeat; 
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.nav-menu .hamburge{
+  display: none;
 }
+
+.banner-img {
+  background-image: url(images/hero-bg.png); 
+  background-size: cover;     
+  background-repeat: no-repeat; 
+  background-position: center;
+  max-width: 100%;
+  min-height: 500px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px; 
+}
+
+.banner-content {
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.circle-img {
+  position: relative;
+  width: 300px; 
+  height: 300px;
+  margin: 0 auto 30px;
+}
+
+.circle-img img {
+  width: 100%;
+  height: auto;
+  max-width: 270px;
+}
+.circle-mic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90px;
+  height: auto;
+}
+
+.circle-mic img {
+  width: 100%;
+  height: auto;
+  max-width: 110px; 
+}
+
+
+.circle-btn {
+  background-color: #00FF88;
+  width: 60px; 
+  height: 30px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.circle-btn .clr-blck {
+    color: #1A0B2E;
+    font-size: 0.8rem; 
+    font-weight: 600;
+}
+
+.banner-text h1 {
+    font-size: 2.5rem; 
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.banner-text p {
+    font-size: 1rem;
+    color: #dedddd;
+    padding: 0 0 25px 0;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.banner-text .btn {
+    padding: 12px 25px;
+    margin: 5px 10px;
+    font-size: 0.9rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+
 /* About Section CSS */
+
 #about-part{
   max-width: 100%;
   background-color: #1A0B2E;
@@ -345,6 +443,85 @@
 /*  Media query for responsive design   */
 
 @media (max-width: 576px) {
+
+/* Nav part */
+
+.nav-logo h1{
+  font-size: 2rem;
+}
+
+.nav-container{
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-btn button{
+  display: none;
+}
+.nav-menu ul li{
+  display: none;
+}
+.nav-menu .hamburge{
+  display: inline-block;
+}
+
+/* Banner part */
+
+.banner-img {
+  min-height: 350px;
+  padding: 20px 15px;
+}
+    
+.circle-img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+    
+.circle-img img {
+  max-width: 150px;
+}
+    
+.circle-mic {
+  width: 55px;
+}
+    
+.circle-mic img {
+  max-width: 55px;
+  max-height: 80px;
+}
+    
+.circle-btn {
+  width: 50px;
+  height: 25px;
+  right: 15px;
+  top: 5px;
+}
+    
+.circle-btn .clr-blck {
+  font-size: 0.7rem;
+}
+    
+.banner-text h1 {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+    
+.banner-text p {
+  font-size: 0.85rem;
+  padding: 0 5px 15px 5px;
+  line-height: 1.4;
+}
+    
+.banner-text .btn {
+  display: inline-block;
+  padding: 8px 20px;
+  font-size: 0.85rem;
+  margin: 0 5px;
+}
+
+
 /* About Part */
 
   .about-footer{
@@ -373,6 +550,29 @@
     grid-column: span 1;
     grid-row: span 1;
   }
+
+/* Episode part */
+.epi-items{
+  flex-direction: column;
+}
+
+/* Host part */
+.host-card{
+  flex-direction: column;
+}
+.host-text{
+  text-align: center;
+  padding-top: 15px;
+}
+.host-icon-item{
+  justify-content: center;
+}
+
+/* Footer part */
+.footer-icon{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
 
 
 
